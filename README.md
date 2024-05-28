@@ -85,3 +85,4 @@ To deploy this project just Push or Merge the code to main branch
 ```bash
   git push origin main
 ```# scan-page
+# scan-page
