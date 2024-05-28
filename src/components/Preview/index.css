@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url(/public/fonts/GTWalsheimPro/regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro Medium';
+    src: url(/public/fonts/GTWalsheimPro/medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro Medium';
+    src: url(/public/fonts/GTWalsheimPro/medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro Bold';
+    src: url(/public/fonts/GTWalsheimPro/bold.ttf);
+    font-weight: 700;
+}
+
+
+body {
+    font-family: 'GT Walsheim Pro' !important;
+}
+
+.font-normal {
+    font-family: 'GT Walsheim Pro' !important;
+}
+
+.font-medium {
+    font-family: 'GT Walsheim Pro Medium';
+}
+
+.font-bold {
+    font-family: 'GT Walsheim Pro Bold';
+}
+
+
+.set-height-pos {
+    height: 480px !important;
+    position: absolute !important;
+}
+
+.set-top-pos {
+    top: -140px;
+}
+
+@media (-webkit-device-pixel-ratio : 1.25) {
+
+    .set-height-pos {
+        height: 400px !important;
+    }
+
+    .set-top-pos {
+        top: -180px;
+    }
+
+}
+
+@media (-webkit-device-pixel-ratio : 1.5) {
+
+    .set-height-pos {
+        height: 400px !important;
+    }
+
+    .set-top-pos {
+        top: -180px;
+    }
+
+}

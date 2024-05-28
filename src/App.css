@@ -1,0 +1,639 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  font-family: Lato, sans-serif !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.app-pages {
+  height: 100vh;
+  /* border-radius: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+  padding: 20px 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  /* padding: 20px 16px; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.pdfview {
+  height: auto;
+  overflow: auto;
+}
+
+.pdfview>canvas {
+  width: 100% !important;
+}
+
+.center {
+  height: 500px;
+}
+
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.circular img {
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cardok {
+  position: relative;
+  border-radius: 0.35rem;
+  background-color: rgba(245, 245, 245, 0.973);
+  transform-style: preserve-3d;
+  transition: 750ms;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  width: 100%;
+  max-width: 490px;
+  margin: 10px;
+}
+
+.cardok:hover {
+  --translate-y: -2px;
+  /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); */
+  opacity: 1;
+}
+
+.cardok.flip {
+  --rotate-y: 180deg;
+}
+
+.cardok .front {
+  left: 0;
+}
+
+.cardok .front,
+.cardok .back {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+
+.cardok .back {
+  transform: rotateY(180deg);
+}
+
+.cardok .back p {
+  max-width: 75px;
+}
+
+.btnShadow {
+  box-shadow: 0 2px 5px #a4a6a8 !important;
+}
+
+.react-simple-image-viewer__modal {
+  z-index: 999 !important;
+}
+
+.react-simple-image-viewer__modal .styles-module_close__2I1sI{
+  top: 30px;
+  right: 20px;
+  font-size: 32px;
+  color: white;
+  opacity: 0.25;
+}
+
+.react-simple-image-viewer__modal .styles-module_close__2I1sI:hover{
+  opacity: 1;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6E6E6E;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #505050;
+}
+
+.video-view video {
+  height: auto !important;
+}
+
+.jss1 {
+  width: 100%;
+}
+
+.jss2 {
+  width: 100%;
+  height: 121px;
+  display: flex;
+  justify-content: center;
+}
+
+.jss4 {
+  width: 80px;
+  border: 2px solid #eaeaec;
+  bottom: -60px;
+  height: 80px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 100%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.jss5 {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 50%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jss6 {
+  object-fit: cover;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+}
+
+.jss7 {
+  width: 100%;
+  margin-top: -1px;
+}
+
+.back_for_detail {
+  padding-top: 42px;
+  padding-bottom: 1px;
+}
+
+.jss9 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.jss10 {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.jss11 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jss12 {
+  display: inline-flex;
+  min-width: 54px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jss12+.jss12 {
+  margin-left: 4px;
+}
+
+.jss13 {
+  border-radius: 4px !important;
+}
+
+.jss14 {
+  font-size: 15px;
+  margin-top: 4px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.jss15 {
+  width: 196px;
+}
+
+.jss16 {
+  max-width: 388px;
+  border: 1px solid #f8f8f9;
+  /* box-shadow: 0 4px 6px 0 #eaeaec; */
+  border-radius: 8px;
+  background-color: #fff;
+  /* margin-right: 16px; */
+}
+
+.jss17 {
+  border-bottom: 1px solid #eaeaec;
+}
+
+.jss17.summary {
+  color: #220E27;
+  padding: 20px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 23px;
+}
+
+.jss17.withIcon {
+  display: flex;
+  padding: 17px 22px 22px;
+}
+
+.jss18:first-child {
+  padding-top: 17px;
+}
+
+.jss18 {
+  display: flex;
+  padding: 0px 11px 22px;
+}
+
+.jss19 {
+  margin-right: 13px;
+  margin-top: 4px;
+}
+
+.jss17:last-child {
+  border-bottom: none;
+}
+
+.jss20 {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+  /* background-color: #f8f8f9; */
+}
+
+.jss21 {
+  padding-top: 1px;
+}
+
+.jss22:last-child {
+  margin-bottom: 0;
+}
+
+.jss23 {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #220E27 !important;
+  text-decoration: none;
+}
+
+.jss24:last-child {
+  margin-bottom: 0;
+}
+
+.jss24 {
+  color: #8B8CA5;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: left;
+  margin-bottom: 24px;
+  margin-top: 0px;
+}
+
+.jss32 {
+  word-break: break-word;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.jss32>div {
+  height: auto !important;
+}
+
+.jss34 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  background: initial;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.jss60 {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px;
+  border-radius: 100%;
+}
+
+.cardlist .MuiCardHeader-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  display: flex;
+}
+
+.cardlist .MuiCardHeader-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#newOne:hover {
+  background-color: #272727 !important;
+}
+
+.noBorderLast :last-child {
+  border-bottom: 0px !important;
+}
+
+.linearProgress .MuiLinearProgress-bar {
+  background-color: #0e379a;
+}
+
+.title {
+  font-size: 250px;
+}
+
+.react-stacked-center-carousel-slide-0 .my-slide-component {
+  -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.react-stacked-center-carousel-slide-0 .my-slide-component img {
+  -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.gallery_img:hover{
+  width: auto;
+}
+
+.sl-title{
+  font-size: 13px;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+
+/* modal css added here */
+.oqg_modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 70%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.oqg_modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The oqg_close Button */
+.oqg_close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.oqg_close:hover,
+.oqg_close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+.swiper-wrap {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.swiper-container {
+  padding: 0 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding-top: 100%;
+  position: relative;
+}
+.swiper-slide:not(.swiper-slide-active),
+.swiper-slide:not(.swiper-slide-prev),
+.swiper-slide:not(.swiper-slide-next) {
+  opacity: 0;
+}
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next {
+  opacity: 1;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+.horizon_images_outer{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.himages{
+  width: 100%;
+}
+
+
+@media (max-width: 480px){
+  .horizon_images_outer{
+    width: 90%;
+  }
+}
+
+@media  (min-width: 641px) {
+  .swiper-container {
+    max-width: 413px;
+  }
+  .welcome_img{
+    width: 650px !important;
+  }
+
+}
+
+@media  (max-width: 300px) {
+.swiper-container {
+  padding: 0 10px;
+}
+}
+
+.image-loading {
+  animation: 2s ease-in-out 0.5s infinite normal none running loading-animate;
+}
+
+@keyframes loading-animate{
+  0%{
+    background-color: #272b2f;
+  }
+  50%{
+    background-color: #6d6d6d;
+  }
+  100%{
+    background-color: #272b2f;
+  }
+}

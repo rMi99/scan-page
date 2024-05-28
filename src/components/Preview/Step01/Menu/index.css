@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url(/public/fonts/GTWalsheimPro/regular.ttf);
+}
+
+
+body{
+    font-family: 'GT Walsheim Pro' !important;
+}
+.font-normal{
+    font-family: 'GT Walsheim Pro' !important;
+}
+
+.font-medium {
+    font-family: 'GT Walsheim Pro';
+}
+.font-bold {
+    font-family: 'GT Walsheim Pro';
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #F2F2F2;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #BDBDBD;
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #6E6E6E;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:active {
+    background: #505050;
+  }

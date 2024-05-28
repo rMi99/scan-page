@@ -1,0 +1,20 @@
+.statusBar{
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    z-index: 12;
+}
+@media (max-width: 959.5px) {
+    .statusBar img{
+        height: 28px;
+    }
+}
+.statusBar img{
+    max-width: 100%;
+    width: 320px;
+}
+@media (min-width: 960px) {
+    .statusBar img{
+        height: 20px;
+    }
+}
